@@ -3,6 +3,8 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
+require('express-async-errors');
+
 const indexRouter = require('./routes/index');
 const movieRouter = require('./routes/movie');
 
@@ -15,7 +17,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter, movieRouter);
-// app.use('/users', usersRouter);
 
 // catch 404 and return not found
 app.use(function (req, res, next) {
