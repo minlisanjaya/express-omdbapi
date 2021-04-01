@@ -1,0 +1,10 @@
+{
+    "successInsertDb": {
+        "fieldCount": 0,
+        "affectedRows": 1,
+        "insertId": 5,
+        "info": "",
+        "serverStatus": 2,
+        "warningStatus": 0
+    }
+}

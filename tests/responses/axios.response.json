@@ -1,0 +1,60 @@
+{
+    "get_response": {
+        "status": 200,
+        "data": {
+            "Search": [
+                {
+                    "Title": "The Shawshank Redemption",
+                    "Year": "1994",
+                    "imdbID": "tt0111161",
+                    "Type": "movie",
+                    "Poster": "https: //m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                },
+                {
+                    "Title": "Shawshank: The Redeeming Feature",
+                    "Year": "2001",
+                    "imdbID": "tt0293927",
+                    "Type": "movie",
+                    "Poster": "https: //m.media-amazon.com/images/M/MV5BYjgwMjNjOGUtNzU3MC00MGM5LTk4NTctNGI5N2I2NGI0YjBhXkEyXkFqcGdeQXVyMjIzMTk0MzM@._V1_SX300.jpg"
+                },
+                {
+                    "Title": "Hope Springs Eternal: A Look Back at 'The Shawshank Redemption'",
+                    "Year": "2004",
+                    "imdbID": "tt0443041",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                },
+                {
+                    "Title": "The Shawshank Redemption: Behind the Scenes",
+                    "Year": "2004",
+                    "imdbID": "tt5443386",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                },
+                {
+                    "Title": "The Shawshank Redemption: Cast Interviews",
+                    "Year": "2004",
+                    "imdbID": "tt5443390",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                },
+                {
+                    "Title": "The Shawshank Redemption (Scene)",
+                    "Year": "2012",
+                    "imdbID": "tt2477746",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                },
+                {
+                    "Title": "The Shawshank Reflection",
+                    "Year": "2015",
+                    "imdbID": "tt3882670",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                }
+            ],
+            "totalResults": "7",
+            "Response": "True"
+        }
+    }
+}

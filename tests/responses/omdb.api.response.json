@@ -1,0 +1,103 @@
+{
+    "searchMovie": {
+        "httpCode": 200,
+        "data": {
+            "Search": [
+                {
+                    "Title": "The Shawshank Redemption",
+                    "Year": "1994",
+                    "imdbID": "tt0111161",
+                    "Type": "movie",
+                    "Poster": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                },
+                {
+                    "Title": "Shawshank: The Redeeming Feature",
+                    "Year": "2001",
+                    "imdbID": "tt0293927",
+                    "Type": "movie",
+                    "Poster": "https://m.media-amazon.com/images/M/MV5BYjgwMjNjOGUtNzU3MC00MGM5LTk4NTctNGI5N2I2NGI0YjBhXkEyXkFqcGdeQXVyMjIzMTk0MzM@._V1_SX300.jpg"
+                },
+                {
+                    "Title": "Hope Springs Eternal: A Look Back at 'The Shawshank Redemption'",
+                    "Year": "2004",
+                    "imdbID": "tt0443041",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                },
+                {
+                    "Title": "The Shawshank Redemption: Behind the Scenes",
+                    "Year": "2004",
+                    "imdbID": "tt5443386",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                },
+                {
+                    "Title": "The Shawshank Redemption: Cast Interviews",
+                    "Year": "2004",
+                    "imdbID": "tt5443390",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                },
+                {
+                    "Title": "The Shawshank Redemption (Scene)",
+                    "Year": "2012",
+                    "imdbID": "tt2477746",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                },
+                {
+                    "Title": "The Shawshank Reflection",
+                    "Year": "2015",
+                    "imdbID": "tt3882670",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                }
+            ],
+            "totalResults": "7",
+            "Response": "True"
+        }
+    },
+    "getMovieDetail": {
+        "httpCode": 200,
+        "data": {
+            "Title": "Terminator 2: Judgment Day",
+            "Year": "1991",
+            "Rated": "R",
+            "Released": "03 Jul 1991",
+            "Runtime": "137 min",
+            "Genre": "Action, Sci-Fi",
+            "Director": "James Cameron",
+            "Writer": "James Cameron, William Wisher",
+            "Actors": "Arnold Schwarzenegger, Linda Hamilton, Edward Furlong, Robert Patrick",
+            "Plot": "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her ten year old son, John Connor, from a more advanced and powerful cyborg.",
+            "Language": "English, Spanish",
+            "Country": "USA, France",
+            "Awards": "Won 4 Oscars. Another 32 wins & 33 nominations.",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.5/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "93%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "75/100"
+                }
+            ],
+            "Metascore": "75",
+            "imdbRating": "8.5",
+            "imdbVotes": "1,001,157",
+            "imdbID": "tt0103064",
+            "Type": "movie",
+            "DVD": "10 Aug 2016",
+            "BoxOffice": "$205,881,154",
+            "Production": "Lightstorm Entertainment, Carolco Pictures Inc., Pacific Western",
+            "Website": "N/A",
+            "Response": "True"
+        }
+    }
+}
