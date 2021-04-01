@@ -5,6 +5,11 @@
 npm install
 ```
 
+## Migrate Database Schema
+```
+npm run db:migrate
+```
+
 ## Run App
 ```
 npm start
