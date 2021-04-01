@@ -9,11 +9,15 @@ class MovieController {
   }
 
   async SearchMovie(request, response) {
-    response.status(200).send({ ...request.query });
+    const result = await this.movieService.SearchMovie(request.query);
+
+    response.status(result.httpCode).send(result.error || result.data);
   }
 
   async GetMovieDetail(request, response) {
-    response.status(200).send({ ...request.query });
+    const result = await this.movieService.GetMovieDetail(request.query);
+
+    response.status(result.httpCode).send(result.error || result.data);
   }
 }
 
