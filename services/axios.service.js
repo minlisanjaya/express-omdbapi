@@ -8,24 +8,12 @@ class AxiosService {
     this.logRequestModel = new LogRequestModel();
   }
 
-  responseHandler(response, url) {
-    let result = null;
+  responseHandler(response) {
     if (response.data) {
-      result = {
+      return {
         httpCode: response.status,
         data: response.data,
       };
-    }
-
-    if (response.response) {
-      result = {
-        httpCode: response.response.status,
-        error: response.response.data,
-      };
-    }
-
-    if (result) {
-      return result;
     }
 
     return responseInternalServerError();
@@ -38,10 +26,10 @@ class AxiosService {
       called_at: new Date(),
     };
 
-    return this.logRequestModel.createLogRequest(paramsLog);
+    return this.logRequestModel.CreateLogRequest(paramsLog);
   }
 
-  async get(url, params, headers = {}) {
+  async Get(url, params = {}, headers = {}) {
     const config = {
       params,
       headers,
@@ -52,7 +40,7 @@ class AxiosService {
       this.logRequest(url, params);
       const response = await this.axios.get(url, config);
 
-      return this.responseHandler(response, url);
+      return this.responseHandler(response);
     } catch (error) {
       return this.responseHandler(error, url);
     }

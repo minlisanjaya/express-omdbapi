@@ -17,7 +17,7 @@ class DBConnection {
     return connection.end();
   }
 
-  async executeQuery(queryString, data) {
+  async ExecuteQuery(queryString, data) {
     try {
       const conn = await this.createConnection();
 

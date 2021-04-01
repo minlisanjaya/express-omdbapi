@@ -7,10 +7,10 @@ class LogRequestModel {
     this.tableName = 'log_request';
   }
 
-  async createLogRequest(data) {
+  async CreateLogRequest(data) {
     const queryString = `INSERT INTO ${this.tableName} SET ?`;
 
-    return this.dbConnection.executeQuery(queryString, [data]);
+    return this.dbConnection.ExecuteQuery(queryString, [data]);
   }
 }
 

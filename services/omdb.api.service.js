@@ -22,7 +22,7 @@ class OmdbAPIService {
       r: 'json',
     };
 
-    return this.httpClient.get('/', paramSearch);
+    return this.httpClient.Get('/', paramSearch);
   }
 
   async GetMovieDetail(params) {
@@ -36,7 +36,7 @@ class OmdbAPIService {
       r: 'json',
     };
 
-    return this.httpClient.get('/', paramDetail);
+    return this.httpClient.Get('/', paramDetail);
   }
 }
 
