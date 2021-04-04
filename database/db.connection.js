@@ -3,32 +3,35 @@ const dbConfig = require('../config/database');
 
 class DBConnection {
   async createConnection() {
-    return mysql.createConnection({
-      host: dbConfig.host,
-      user: dbConfig.user,
-      password: dbConfig.password,
-      port: dbConfig.port,
-      database: dbConfig.database,
-      namedPlaceholders: true,
-    });
-  }
+    try {
+      const connection = mysql.createConnection({
+        host: dbConfig.host,
+        user: dbConfig.user,
+        password: dbConfig.password,
+        port: dbConfig.port,
+        database: dbConfig.database,
+        namedPlaceholders: true,
+      });
 
-  async closeConnection(connection) {
-    return connection.end();
+      return connection;
+    } catch (error) {
+      throw new Error(error);
+    }
   }
 
   async ExecuteQuery(queryString, data) {
-    try {
-      const conn = await this.createConnection();
+    let conn = this.createConnection();
 
+    try {
       const [row] = await conn.query(queryString, data);
       conn.end();
 
       return row;
     } catch (error) {
       console.error(error);
+      conn.end();
 
-      return { errorCode: error.code };
+      throw new Error(error);
     }
   }
 }
